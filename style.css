@@ -471,6 +471,9 @@ form input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    min-width: 100vh;
+  }
   /* Header */
   .hdr-info {
     flex-direction: column;
