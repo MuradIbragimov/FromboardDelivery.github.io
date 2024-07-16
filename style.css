@@ -471,8 +471,10 @@ form input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+  html,
   body {
-    min-width: 100vh;
+    width: 100%;
+    overflow-x: hidden;
   }
   /* Header */
   .hdr-info {
@@ -509,12 +511,19 @@ form input[type="submit"]:hover {
   .information {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .information-block {
-    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
   }
   .information-img img {
     width: 100%;
+  }
+
+  .form-calculator input {
+    grid-column: 1/2 span;
   }
 
   /* about */
